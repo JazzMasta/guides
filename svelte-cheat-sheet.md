@@ -38,9 +38,9 @@ $: title = title || 'No title provided'
 {/if }
 ```
 
-### each loop, (with else and index)
+### each loop, (with else, index, and key)
 ```svelte
-{#each contentArray as item, index}
+{#each contentArray as item, index (item.uniqueId)}
   <ContentCard title={ (index+1) + '. ' + item.title } body={ item.body } />
 {:else }
   Content to show if the array is empty
