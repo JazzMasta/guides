@@ -15,3 +15,12 @@ $: title = title || 'No title provided'
 <div class:has-error={ hasError } />
 ```
 
+### Two-way binding
+```
+<input type="text" bind:value={ myVariable } />
+```
+
+### Output HTML
+```
+<p>{ @html variableWithHtmlContent }</p>
+```
