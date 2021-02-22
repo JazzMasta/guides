@@ -27,6 +27,7 @@ $: title = title || 'No title provided'
 
 ## Conditional output
 
+### if, else, if-else
 ```svelte
 {#if state === 'done' }
   content goes here
@@ -36,4 +37,14 @@ $: title = title || 'No title provided'
   else content
 {/if }
 ```
+
+### each loop, (with else and index)
+```svelte
+{#each contentArray as item, index}
+  <ContentCard title={ (index+1) + '. ' + item.title } body={ item.body } />
+{:else }
+  Content to show if the array is empty
+{/each }
+```
+
 
