@@ -27,7 +27,7 @@ $: title = title || 'No title provided'
 
 ## Conditional output
 
-```
+```svelte
 {#if state === 'done' }
   content goes here
 {:else if state === 'error' }
