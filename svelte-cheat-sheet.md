@@ -24,3 +24,16 @@ $: title = title || 'No title provided'
 ```
 <p>{ @html variableWithHtmlContent }</p>
 ```
+
+## Conditional output
+
+```
+{#if state === 'done' }
+  content goes here
+{:else if state === 'error' }
+  alternative content
+{:else }
+  else content
+{/if }
+```
+
