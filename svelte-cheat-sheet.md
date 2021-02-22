@@ -5,23 +5,23 @@
 
 
 ### Add dynamic expressions (e.g. based on props)
-```
+```svelte
 $: calculatedValue = prop1 * 10
 $: title = title || 'No title provided'
 ```
 
 ### Dynamic CSS classes
-```
+```svelte
 <div class:has-error={ hasError } />
 ```
 
 ### Two-way binding
-```
+```svelte
 <input type="text" bind:value={ myVariable } />
 ```
 
 ### Output HTML
-```
+```svelte
 <p>{ @html variableWithHtmlContent }</p>
 ```
 
