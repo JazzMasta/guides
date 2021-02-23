@@ -62,7 +62,7 @@ function onClickDelete () {
   dispatchEvent('delete', { itemId: 14802 })
 }
 ```
-
+Extract the event data with `event.detail`
 
 
 ### Output HTML
