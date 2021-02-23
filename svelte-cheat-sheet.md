@@ -46,9 +46,9 @@ $: title = title || 'No title provided'
 
 
 ### Forward input event to parent component
-Used when creating custom input components
+Used when creating custom input components with two-way binding
 ```svelte
-<input type="text" on:input />
+<input type="text" value="{value}" on:input />
 ```
 
 ### Output HTML
