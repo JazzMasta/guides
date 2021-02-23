@@ -51,6 +51,20 @@ Used when creating custom input components with two-way binding
 <input type="text" value="{value}" on:input />
 ```
 
+### Emit custom event
+```svelte
+import { createEventDispatcher } from 'svelte';
+
+const dispatchEvent = createEventDispatcher();
+
+function onClickDelete () {
+  // dispatch event with id 'delete' and some custom data
+  dispatchEvent('delete', { itemId: 14802 })
+}
+```
+
+
+
 ### Output HTML
 ```svelte
 <p>{ @html variableWithHtmlContent }</p>
