@@ -1,8 +1,13 @@
+# Props
 
 ### Add prop
 
 `export let myProp`
 
+### Default value (Making prop optional)
+```
+let prop1 = 'default value'
+```
 
 ### Spread props from Object data
 ```svelte
