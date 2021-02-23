@@ -45,6 +45,12 @@ $: title = title || 'No title provided'
 `self`: only trigger handler if event.target is the element itself
 
 
+### Forward input event to parent component
+Used when creating custom input components
+```svelte
+<input type="text" on:input />
+```
+
 ### Output HTML
 ```svelte
 <p>{ @html variableWithHtmlContent }</p>
