@@ -4,6 +4,14 @@
 `export let myProp`
 
 
+### Spread props from Object data
+```svelte
+const data = { id:'123', title:'Title', body:'Some text' }
+</script>
+
+<SomeComponent {...data} />
+```
+
 ### Add dynamic expressions (e.g. based on props)
 ```svelte
 $: calculatedValue = prop1 * 10
