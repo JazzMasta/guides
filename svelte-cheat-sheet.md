@@ -16,6 +16,10 @@ const data = { id:'123', title:'Title', body:'Some text' }
 
 <SomeComponent {...data} />
 ```
+### Named slots
+
+`<h1 slot="header">Title in slot "header"</h1>`
+
 
 ### Add dynamic expressions (e.g. based on props)
 ```svelte
