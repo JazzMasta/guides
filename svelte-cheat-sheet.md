@@ -27,15 +27,28 @@ $: calculatedValue = prop1 * 10
 $: title = title || 'No title provided'
 ```
 
+# CSS
+
 ### Dynamic CSS classes
 ```svelte
 <div class:has-error={ hasError } />
 ```
 
+# Forms and Elements
+
 ### Two-way binding
 ```svelte
 <input type="text" bind:value={ myVariable } />
 ```
+
+### Reference an HTML element
+
+```
+<input type="text" bind:this={ inputReference } />
+```
+
+
+# Events
 
 ### Event binding
 ```svelte
