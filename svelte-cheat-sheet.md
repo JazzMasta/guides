@@ -138,13 +138,21 @@ Extract the event data with `event.detail`
 ### context module - Running scripts on backend
 ```
 <script context="module">
-  // This will run on backend before sending response to frontend
+  export function preload(page) {
+    // This will run on backend before sending response to frontend
+  }
 </script>
 ```
-
 ### fetch on backend
 
 Use `this.fetch` to use the fetch function on the backend
+
+Use `this.error` to show the custom error page if preloading fails
+Example :
+```
+this.error(500, 'Could not fetch data')
+```
+
 
 
 ## Routing
