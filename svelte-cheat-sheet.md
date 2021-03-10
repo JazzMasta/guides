@@ -131,3 +131,21 @@ Extract the event data with `event.detail`
 ```
 
 
+# Sapper
+
+## Run script on backend
+```
+<script context="module">
+  // This will run on backend before sending response to frontend
+</script>
+```
+
+## fetch on backend
+
+Use `this.fetch` to use the fetch function on the backend
+
+
+
+
+
+
